@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
-// import Menu from "../component/Menu";
+import Menu from "../component/Menu";
 
 const Home = (props) => {
     const description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ";
@@ -21,8 +21,7 @@ const Home = (props) => {
                         },
                     ]}
                 >
-                    hello
-                    {/* {props.channelName} */}
+                    {props.channelName}
                 </Text>
 
                 <Text style={styles.paraStyle}>{description} </Text>
@@ -30,7 +29,7 @@ const Home = (props) => {
 
             <View style={styles.menuStyle}>
                 <View style={styles.lineStyle}></View>
-                {/* <Menu /> */}
+                <Menu />
                 <View
                     style={[
                         styles.lineStyle,
