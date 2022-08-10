@@ -1,26 +1,16 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { TouchableOpacity, View, StyleSheet, Text, Image } from "react-native";
+import { TouchableOpacity, View, StyleSheet, Image } from "react-native";
 
 const Menu = () => {
     const navigation = useNavigation();
     return (
         <View style={styles.menuContainer}>
             <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Course")}>
-                {/* <Text>Course</Text> */}
                 <Image
                     style={styles.iconStytle}
                     source={{
                         uri: "https://img.icons8.com/stickers/90/000000/training.png",
-                    }}
-                />
-            </TouchableOpacity>
-
-            <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Student")}>
-                <Image
-                    style={styles.iconStytle}
-                    source={{
-                        uri: "https://img.icons8.com/stickers/100/000000/conference.png",
                     }}
                 />
             </TouchableOpacity>

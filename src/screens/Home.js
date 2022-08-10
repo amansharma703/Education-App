@@ -3,8 +3,7 @@ import React from "react";
 import Menu from "../component/Menu";
 
 const Home = (props) => {
-    const description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ";
-
+    const description = "Be ready to crack amazing competition from UPSC to JEE, NEET, SSC, and Bank exams, among other thing";
     return (
         <View style={styles.mainContainer}>
             <View style={styles.homeTop}>
@@ -18,6 +17,7 @@ const Home = (props) => {
                             fontSize: 33,
                             color: "#4c5dab",
                             marginTop: 0,
+                            fontWeight: "500",
                         },
                     ]}
                 >
@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
     },
 
     homeTop: {
-        // height: "100%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -62,29 +61,27 @@ const styles = StyleSheet.create({
     },
 
     headerImage: {
-        height: 300,
+        height: 250,
         width: "100%",
-        aspectRatio: 1,
         display: "flex",
-        marginTop: 50,
+        marginTop: 100,
+        marginBottom: 20,
         borderRadius: 20,
     },
 
     mainHeader: {
-        fontSize: 30,
+        fontSize: 28,
         color: "#344055",
         textTransform: "uppercase",
-        // fontFamily: "Nunito_600SemiBold",
     },
 
     paraStyle: {
-        textAlign: "left",
+        textAlign: "center",
         fontSize: 19,
         color: "#7d7d7d",
         marginTop: 30,
         paddingBottom: 50,
         lineHeight: 26,
-        // fontFamily: "JosefinSans_400Regular",
     },
 
     lineStyle: {
