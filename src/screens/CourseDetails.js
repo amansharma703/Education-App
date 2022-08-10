@@ -28,7 +28,7 @@ const CourseDetails = ({ navigation, route }) => {
                 <Text style={[styles.description, styles.subCourse]}>{selectedCourse.course3}</Text>
 
                 <View style={styles.buttonContainer}>
-                    <Text style={styles.price}> {selectedCourse.price} </Text>
+                    <Text style={styles.price}>₹ {selectedCourse.price} </Text>
                     <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Course")}>
                         <Text style={styles.buttonText}> Join Now </Text>
                     </TouchableOpacity>
@@ -38,16 +38,11 @@ const CourseDetails = ({ navigation, route }) => {
     );
 };
 
-// !todo style the course1 and make it uppercase
-
 const styles = StyleSheet.create({
     mainContainer: {
-        // backgroundColor: "red",
         paddingHorizontal: 20,
     },
     courseContainer: {
-        // height: "50%",
-        // display: "flex",
         padding: 30,
         backgroundColor: "rgba(255, 255, 255, 0.90)",
         textAlign: "center",
