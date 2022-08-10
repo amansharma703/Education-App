@@ -4,7 +4,6 @@ import Courses from "../api/Courseapi";
 
 const CourseDetails = ({ navigation, route }) => {
     const id = route.params.courseId;
-    console.log(id);
 
     const selectedCourse = Courses.find((element) => {
         return id === element.id;
