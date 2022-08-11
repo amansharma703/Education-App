@@ -26,19 +26,6 @@ const Home = (props) => {
 
                 <Text style={styles.paraStyle}>{description} </Text>
             </View>
-
-            <View style={styles.menuStyle}>
-                <View style={styles.lineStyle}></View>
-                <Menu />
-                <View
-                    style={[
-                        styles.lineStyle,
-                        {
-                            marginVertical: 10,
-                        },
-                    ]}
-                ></View>
-            </View>
         </View>
     );
 };
